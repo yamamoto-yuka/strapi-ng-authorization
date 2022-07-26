@@ -1,1 +1,4 @@
-<p>specials works!</p>
+<div *ngFor="let specials of special">
+  <h1>{{specials.attributes.Title}}</h1>
+  <p>{{specials.attributes.Description}}</p>
+</div>

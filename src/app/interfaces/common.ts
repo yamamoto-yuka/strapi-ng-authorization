@@ -20,3 +20,15 @@ export interface Register{
     confirmed:boolean;
   }
 }
+
+export interface Special{
+  id:number;
+  attributes:{
+    Title:string;
+    Description:string;
+  }
+}
+
+export interface Specials{
+  data:Special[];
+}

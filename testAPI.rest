@@ -27,4 +27,4 @@ Content-Type: application/json
 
 ### Accessed your generated JWT token
 GET http://localhost:1337/api/special-auth-classes
-Authorization: Bearer {{jwt}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjU4ODcyMzUxLCJleHAiOjE2NjE0NjQzNTF9.sQsNGbGZL5YCXpim1J4TBoXTbTdsXJMYXDT6RAxWuto

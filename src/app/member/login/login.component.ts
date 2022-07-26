@@ -20,7 +20,8 @@ export class LoginComponent implements OnInit {
     this.cs.login(logindata).subscribe(res =>{
       console.log(res.jwt);
       if(res.jwt){
-        this.router.navigate(['/member/specials'])
+        localStorage.setItem('jwt', res.jwt);
+        // this.router.navigate(['/member/specials'])
       }
     });
   }
