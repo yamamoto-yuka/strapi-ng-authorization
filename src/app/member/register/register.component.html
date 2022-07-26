@@ -1,0 +1,9 @@
+<input type="text" name="username" [(ngModel)]="username" placeholder="username...">
+<br>
+<input type="email" name="username" [(ngModel)]="email" placeholder="email...">
+<br>
+<input type="password" name="password" [(ngModel)]="password" placeholder="password...">
+<br>
+<button (click)="register()">Register</button>
+<div>{{registerMessage}}</div>
+<button routerLink="/member/login">Log in</button>

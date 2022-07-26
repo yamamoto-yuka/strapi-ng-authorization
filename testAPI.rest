@@ -1,0 +1,30 @@
+@jwt = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6NCwiaWF0IjoxNjU4ODU4NTcyLCJleHAiOjE2NjE0NTA1NzJ9.kxnGZEwPbaV5KWmJ5zDCmmS6HtyQuT8EPzWJT7qhTpA
+
+###
+GET http://localhost:1337/api/homepage-autu-class?populate=*
+
+###
+GET http://localhost:1337/api/special-auth-classes
+
+### Register a user
+POST http://localhost:1337/api/auth/local/register
+Content-Type: application/json
+
+{
+  "username":"memberyuka@member.com",
+  "email":"memberyuka@member.com",
+  "password":"123456"
+}
+
+### Authenticate a user
+POST http://localhost:1337/api/auth/local
+Content-Type: application/json
+
+{
+  "identifier": "memberyuka@member.com",
+  "password": "123456"
+}
+
+### Accessed your generated JWT token
+GET http://localhost:1337/api/special-auth-classes
+Authorization: Bearer {{jwt}}
